@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Julius' Profile</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; }
+    .content { margin-top: 20px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Choose Your Language</h1>
+  <button onclick="showContent('en')">English</button>
+  <button onclick="showContent('pt')">Português</button>
+  <button onclick="showContent('de')">Deutsch</button>
+
+  <div class="content" id="en">
+    <h2>About Me</h2>
+    <p>I am a trilingual German software developer...</p>
+  </div>
+  <div class="content hidden" id="pt">
+    <h2>Sobre Mim</h2>
+    <p>Sou um desenvolvedor de software alemão trilíngue...</p>
+  </div>
+  <div class="content hidden" id="de">
+    <h2>Über Mich</h2>
+    <p>Ich bin ein dreisprachiger deutscher Softwareentwickler...</p>
+  </div>
+
+  <script>
+    function showContent(lang) {
+      document.querySelectorAll('.content').forEach(div => div.classList.add('hidden'));
+      document.getElementById(lang).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

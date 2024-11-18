@@ -1,18 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleThemeBtn = document.createElement("button");
-  toggleThemeBtn.textContent = "Toggle Theme";
-  toggleThemeBtn.style.position = "fixed";
-  toggleThemeBtn.style.bottom = "20px";
-  toggleThemeBtn.style.right = "20px";
-  toggleThemeBtn.style.padding = "10px 20px";
-  toggleThemeBtn.style.backgroundColor = "#4a90e2";
-  toggleThemeBtn.style.color = "white";
-  toggleThemeBtn.style.border = "none";
-  toggleThemeBtn.style.borderRadius = "5px";
-  toggleThemeBtn.style.cursor = "pointer";
-  document.body.appendChild(toggleThemeBtn);
+function changeLanguage(lang) {
+  const greeting = document.getElementById('greeting');
+  const typingText = document.getElementById('typing-text');
 
-  toggleThemeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme");
-  });
-});
+  if (lang === 'en') {
+    greeting.textContent = 'Hello There! I am Julius!';
+    typingText.innerHTML = '<img src="https://readme-typing-svg.herokuapp.com?font=comfortaa&color=EC3E85&size=30&width=1000&lines=Welcome+to+my+GitHub+Profile!" alt="Typing Animation">';
+    // Alterar outros textos para inglês
+  } else if (lang === 'pt') {
+    greeting.textContent = 'Olá! Eu sou Julius!';
+    typingText.innerHTML = '<img src="https://readme-typing-svg.herokuapp.com?font=comfortaa&color=EC3E85&size=30&width=1000&lines=Bem-vindo+ao+meu+perfil+do+GitHub!" alt="Animação de Digitação">';
+    // Alterar outros textos para português
+  } else if (lang === 'de') {
+    greeting.textContent = 'Hallo! Ich bin Julius!';
+    typingText.innerHTML = '<img src="https://readme-typing-svg.herokuapp.com?font=comfortaa&color=EC3E85&size=30&width=1000&lines=Herzlich+willkommen+zu+meinem+GitHub-Profil!" alt="Schreibanimation">';
+    // Alterar outros textos para alemão
+  }
+}

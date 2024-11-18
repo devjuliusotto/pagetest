@@ -1,37 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Julius' Profile</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; }
-    .content { margin-top: 20px; }
-    .hidden { display: none; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julius Otto's Profile</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Choose Your Language</h1>
-  <button onclick="showContent('en')">English</button>
-  <button onclick="showContent('pt')">Português</button>
-  <button onclick="showContent('de')">Deutsch</button>
+  <header>
+    <h1>Hello There! I am Julius!</h1>
+    <div class="typing-animation">
+      <img src="https://readme-typing-svg.herokuapp.com?font=comfortaa&color=EC3E85&size=40&width=2000&lines=Welcome+to+my+GitHub+Profile!;Bem-vindo+ao+meu+perfil+do+GitHub!;Herzlich+willkommen+zu+meinem+GitHub-Profil!" alt="Typing animation">
+    </div>
+  </header>
 
-  <div class="content" id="en">
-    <h2>About Me</h2>
-    <p>I am a trilingual German software developer...</p>
-  </div>
-  <div class="content hidden" id="pt">
-    <h2>Sobre Mim</h2>
-    <p>Sou um desenvolvedor de software alemão trilíngue...</p>
-  </div>
-  <div class="content hidden" id="de">
-    <h2>Über Mich</h2>
-    <p>Ich bin ein dreisprachiger deutscher Softwareentwickler...</p>
-  </div>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a trilingual German software developer with a keen interest in turning ideas into practical solutions. 
+        On this GitHub profile, you'll find a collection of my academic projects from FIAP and other personal creations.
+        My goal is to continually explore new technologies and enhance my skills.
+      </p>
+    </section>
 
-  <script>
-    function showContent(lang) {
-      document.querySelectorAll('.content').forEach(div => div.classList.add('hidden'));
-      document.getElementById(lang).classList.remove('hidden');
-    }
-  </script>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          Currently studying at <strong>Rice University</strong> (Houston, United States), enrolled in the ESL program and participating in Summer Tech Minor Degrees focusing on <em>Machine Learning & AI</em> and <em>Data Science</em>.
+        </li>
+        <li>
+          Pursuing a degree in <strong>ADS</strong> (Analysis and Development of Systems) at <strong>FIAP</strong> (São Paulo, Brazil), learning:
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C#</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="languages">
+      <h2>Languages</h2>
+      <div class="flags">
+        <div><img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="German Flag"> German - Native</div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Brazilian Flag"> Portuguese - Native</div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="American Flag"> English - Advanced</div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Spanish Flag"> Spanish - Intermediate</div>
+      </div>
+    </section>
+
+    <section id="technologies">
+      <h2>Technologies and Tools</h2>
+      <div class="tools">
+        <span>Python</span>
+        <span>Java</span>
+        <span>C#</span>
+        <span>JavaScript</span>
+        <span>Angular</span>
+        <span>React</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>Bootstrap</span>
+        <span>SQL</span>
+        <span>AWS</span>
+      </div>
+    </section>
+
+    <section id="stats">
+      <h2>GitHub Stats</h2>
+      <div class="stats">
+        <img src="https://github-readme-stats.vercel.app/api?username=devjuliusotto&show_icons=true&theme=radical" alt="GitHub Stats">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devjuliusotto&layout=compact&theme=radical" alt="Top Languages">
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies and Interests</h2>
+      <ul>
+        <li>Outdoor Activities: Passionate about hiking and camping with friends.</li>
+        <li>Curiosity: Fascinated by Aerospace Engineering and Industrial Engineering.</li>
+      </ul>
+    </section>
+
+    <section id="spotify">
+      <h3>🎧 Spotify Playing</h3>
+      <div class="spotify-links">
+        <a href="https://open.spotify.com/playlist/0OlAPyg251DVP6haZ99Qwi?si=18dc58b7319f40d0">General Music</a>
+        <a href="https://open.spotify.com/playlist/5APgOEMKL6SyOEzNFBCNcl?si=d16e56ab3d384d54">Programming Music</a>
+        <a href="https://open.spotify.com/playlist/5Nqfm0iJswV0TnjEcendet?si=6dcfd7e809304efa">Soft Songs</a>
+        <a href="https://open.spotify.com/intl-pt/album/2RNTBrSO8U8XjjEj9RVvZ5?si=kQ8v1vMqRGqsc3U-wEVY2w">GYM</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Julius Otto</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

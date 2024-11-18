@@ -1,0 +1,60 @@
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #4a90e2;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.flags img {
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.tools span {
+  display: inline-block;
+  background-color: #eaeaea;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.stats img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.spotify-links a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+  color: #1db954;
+  font-weight: bold;
+}

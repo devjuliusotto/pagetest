@@ -2,81 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Julius Otto's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Julius Otto's Profile</title>
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
 </head>
 <body>
-  <header>
-    <h1>Hello There! I am Julius!</h1>
-    <div class="typing-animation">
-      <img src="https://readme-typing-svg.herokuapp.com?font=comfortaa&color=EC3E85&size=40&width=2000&lines=Welcome+to+my+GitHub+Profile!;Bem-vindo+ao+meu+perfil+do+GitHub!;Herzlich+willkommen+zu+meinem+GitHub-Profil!" alt="Typing animation">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Julius Otto</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" onclick="changeLanguage('en')">English</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" onclick="changeLanguage('pt')">Português</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" onclick="changeLanguage('de')">Deutsch</button>
+        </li>
+      </ul>
     </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="text-center py-5">
+    <h1 id="greeting">Hello There! I am Julius!</h1>
+    <p id="typing-text">
+      <img
+        src="https://readme-typing-svg.herokuapp.com?font=comfortaa&color=EC3E85&size=30&width=1000&lines=Welcome+to+my+GitHub+Profile!"
+        alt="Typing Animation"
+      />
+    </p>
   </header>
 
-  <main>
-    <section id="about">
+  <!-- Main Content -->
+  <main class="container">
+    <!-- About Me Section -->
+    <section id="about" class="my-5">
       <h2>About Me</h2>
       <p>
-        I am a trilingual German software developer with a keen interest in turning ideas into practical solutions. 
-        On this GitHub profile, you'll find a collection of my academic projects from FIAP and other personal creations.
-        My goal is to continually explore new technologies and enhance my skills.
+        I am a trilingual German software developer with a keen interest in turning ideas into practical solutions. On this GitHub profile, you'll find a collection of my academic projects from FIAP and other personal creations. My goal is to continually explore new technologies and enhance my skills.
       </p>
     </section>
 
-    <section id="education">
+    <!-- Education Section -->
+    <section id="education" class="my-5">
       <h2>Education</h2>
-      <ul>
-        <li>
-          Currently studying at <strong>Rice University</strong> (Houston, United States), enrolled in the ESL program and participating in Summer Tech Minor Degrees focusing on <em>Machine Learning & AI</em> and <em>Data Science</em>.
-        </li>
-        <li>
-          Pursuing a degree in <strong>ADS</strong> (Analysis and Development of Systems) at <strong>FIAP</strong> (São Paulo, Brazil), learning:
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Rice University</h3>
+          <p>
+            Currently studying in person at Rice University (Houston, United States), enrolled in the ESL program. Participating in Summer Tech Minor Degrees focusing on Machine Learning & AI and Data Science.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3>FIAP</h3>
+          <p>
+            Pursuing a degree in ADS (Analysis and Development of Systems) at FIAP (São Paulo, Brazil), learning:
+          </p>
           <ul>
             <li>Java</li>
             <li>Python</li>
             <li>C#</li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="languages">
+    <!-- Languages Section -->
+    <section id="languages" class="my-5">
       <h2>Languages</h2>
-      <div class="flags">
-        <div><img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="German Flag"> German - Native</div>
-        <div><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Brazilian Flag"> Portuguese - Native</div>
-        <div><img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="American Flag"> English - Advanced</div>
-        <div><img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Spanish Flag"> Spanish - Intermediate</div>
+      <div class="row text-center">
+        <div class="col-md-3 col-sm-6 my-2">
+          <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="German Flag" class="flag">
+          <p>German - Native</p>
+        </div>
+        <div class="col-md-3 col-sm-6 my-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Brazilian Flag" class="flag">
+          <p>Portuguese - Native</p>
+        </div>
+        <div class="col-md-3 col-sm-6 my-2">
+          <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="American Flag" class="flag">
+          <p>English - Advanced</p>
+        </div>
+        <div class="col-md-3 col-sm-6 my-2">
+          <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" alt="Spanish Flag" class="flag">
+          <p>Spanish - Intermediate</p>
+        </div>
       </div>
     </section>
 
-    <section id="technologies">
+    <!-- Technologies and Tools Section -->
+    <section id="technologies" class="my-5">
       <h2>Technologies and Tools</h2>
-      <div class="tools">
-        <span>Python</span>
-        <span>Java</span>
-        <span>C#</span>
-        <span>JavaScript</span>
-        <span>Angular</span>
-        <span>React</span>
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>Bootstrap</span>
-        <span>SQL</span>
-        <span>AWS</span>
+      <div class="row text-center">
+        <div class="col-4 col-sm-2 my-2">
+          <i class="fab fa-python fa-2x"></i>
+          <p>Python</p>
+        </div>
+        <div class="col-4 col-sm-2 my-2">
+          <i class="fab fa-java fa-2x"></i>
+          <p>Java</p>
+        </div>
+        <div class="col-4 col-sm-2 my-2">
+          <i class="fab fa-js fa-2x"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="col-4 col-sm-2 my-2">
+          <i class="fab fa-react fa-2x"></i>
+          <p>React</p>
+        </div>
+        <div class="col-4 col-sm-2 my-2">
+          <i class="fab fa-angular fa-2x"></i>
+          <p>Angular</p>
+        </div>
+        <div class="col-4 col-sm-2 my-2">
+          <i class="fas fa-database fa-2x"></i>
+          <p>SQL</p>
+        </div>
       </div>
     </section>
 
-    <section id="stats">
+    <!-- GitHub Stats Section -->
+    <section id="stats" class="my-5">
       <h2>GitHub Stats</h2>
-      <div class="stats">
-        <img src="https://github-readme-stats.vercel.app/api?username=devjuliusotto&show_icons=true&theme=radical" alt="GitHub Stats">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devjuliusotto&layout=compact&theme=radical" alt="Top Languages">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=devjuliusotto&show_icons=true&theme=radical"
+            alt="GitHub Stats"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=devjuliusotto&layout=compact&theme=radical"
+            alt="Top Languages"
+            class="img-fluid"
+          />
+        </div>
       </div>
     </section>
 
-    <section id="hobbies">
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="my-5">
       <h2>Hobbies and Interests</h2>
       <ul>
         <li>Outdoor Activities: Passionate about hiking and camping with friends.</li>
@@ -84,21 +173,31 @@
       </ul>
     </section>
 
-    <section id="spotify">
-      <h3>🎧 Spotify Playing</h3>
+    <!-- Spotify Section -->
+    <section id="spotify" class="my-5 text-center">
+      <h2>🎧 Spotify Playing</h2>
       <div class="spotify-links">
-        <a href="https://open.spotify.com/playlist/0OlAPyg251DVP6haZ99Qwi?si=18dc58b7319f40d0">General Music</a>
-        <a href="https://open.spotify.com/playlist/5APgOEMKL6SyOEzNFBCNcl?si=d16e56ab3d384d54">Programming Music</a>
-        <a href="https://open.spotify.com/playlist/5Nqfm0iJswV0TnjEcendet?si=6dcfd7e809304efa">Soft Songs</a>
-        <a href="https://open.spotify.com/intl-pt/album/2RNTBrSO8U8XjjEj9RVvZ5?si=kQ8v1vMqRGqsc3U-wEVY2w">GYM</a>
+        <a href="https://open.spotify.com/playlist/0OlAPyg251DVP6haZ99Qwi?si=18dc58b7319f40d0" target="_blank" class="btn btn-spotify m-2">General Music</a>
+        <a href="https://open.spotify.com/playlist/5APgOEMKL6SyOEzNFBCNcl?si=d16e56ab3d384d54" target="_blank" class="btn btn-spotify m-2">Programming Music</a>
+        <a href="https://open.spotify.com/playlist/5Nqfm0iJswV0TnjEcendet?si=6dcfd7e809304efa" target="_blank" class="btn btn-spotify m-2">Soft Songs</a>
+        <a href="https://open.spotify.com/intl-pt/album/2RNTBrSO8U8XjjEj9RVvZ5?si=kQ8v1vMqRGqsc3U-wEVY2w" target="_blank" class="btn btn-spotify m-2">GYM</a>
       </div>
     </section>
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-dark text-white">
     <p>&copy; 2024 Julius Otto</p>
   </footer>
 
+  <!-- jQuery and Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>
